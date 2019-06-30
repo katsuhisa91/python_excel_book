@@ -1,3 +1,3 @@
 import hello
 
-hello.many_times(5)
+hello.many_times(3)

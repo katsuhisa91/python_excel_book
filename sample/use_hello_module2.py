@@ -1,3 +1,3 @@
 from hello import many_times
 
-many_times(5)
+many_times(3)
