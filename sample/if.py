@@ -1,4 +1,4 @@
-money = int(input('何円持っている？：'))
+money = int(input('何円もっている？：'))
 if money > 300:
     print('卵と牛乳を買いましょう')
 else:
