@@ -14,7 +14,7 @@ gc = gspread.authorize(credentials)
 
 sp = gc.open_by_key(sp_id)
 worksheet = sp.worksheet('シート1')
-cell = worksheet.acell('B1').value
+cell_value = worksheet.acell('B1').value
 # 別の指定方法
-# cell = worksheet.cell(1, 2).value
-print(cell)
+# cell_value = worksheet.cell(1, 2).value
+print(cell_value)
