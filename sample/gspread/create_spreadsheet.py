@@ -10,6 +10,6 @@ key_name = 'gspread-xxxxxxxxxxxx.json'
 credentials = ServiceAccountCredentials.from_json_keyfile_name(key_name, scope)
 gc = gspread.authorize(credentials)
 
-sh = gc.create('A new spreadsheet')
-sh.share('91katsuhisa@gmail.com', perm_type='user', role='writer')
-print('https://docs.google.com/spreadsheets/d/' + sh.id)
+sp = gc.create('A new spreadsheet')
+sp.share('91katsuhisa@gmail.com', perm_type='user', role='writer')
+print('https://docs.google.com/spreadsheets/d/' + sp.id)
