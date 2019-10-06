@@ -13,8 +13,13 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(key_name, scope)
 gc = gspread.authorize(credentials)
 
 sp = gc.open_by_key(sp_id)
+
+# 別の指定方法
+# worksheet = sp.get_worksheet(0)
 worksheet = sp.worksheet('シート1')
-cell_value = worksheet.acell('B1').value
+
 # 別の指定方法
 # cell_value = worksheet.cell(1, 2).value
+cell_value = worksheet.acell('B1').value
+
 print(cell_value)
