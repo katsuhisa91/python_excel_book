@@ -16,5 +16,6 @@ sp = gc.create('A new spreadsheet')
 sp.add_worksheet('A new worksheet', 2, 4)
 print(sp.worksheets())
 
-sp.share('91katsuhisa@gmail.com', perm_type='user', role='writer')
+# メールアドレスは、スプレッドシートを共有したい任意のメールアドレスに置き換え
+sp.share('メールアドレス', perm_type='user', role='writer')
 print('https://docs.google.com/spreadsheets/d/' + sp.id)
