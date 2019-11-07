@@ -1,2 +1,3 @@
 gspread/gspread-*.json
 pygsheets/pygsheets-*.json
+pygsheets/consts.txt
