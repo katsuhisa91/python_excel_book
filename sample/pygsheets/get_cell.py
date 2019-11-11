@@ -7,6 +7,6 @@ sp = gc.open_by_key('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
 # wks = sp.worksheet('title', "シート1") でも,
 # wks = sp.worksheet_by_title("シート1") でもOK
 wks = sp.worksheet('index', 0)
-# value = wks.cell((2,1)).value でもOK
+# value = wks.cell((1,2)).value でもOK
 value = wks.cell('B1').value
 print(value)
