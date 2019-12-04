@@ -8,3 +8,6 @@ with open('./file.txt') as f:
 if postal_code_match:
     print(postal_code_match)
     print(postal_code_match.group())
+    print(postal_code_match.start())
+    print(postal_code_match.end())
+    print(postal_code_match.span())
