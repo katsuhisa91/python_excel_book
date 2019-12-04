@@ -1,2 +1,2 @@
-with open('./file.txt', 'w') as f:
+with open('./file.txt', 'x') as f:
     f.write('sample text')
