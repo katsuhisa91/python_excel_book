@@ -1,6 +1,6 @@
 import os
 
-path = "../"
+path = '../'
 files = os.listdir(path)
 
 print(files)
