@@ -1,4 +1,4 @@
-with open('./file.txt') as f:
+with open('./file.txt', newline='') as f:
     text = f.read()
 
 if 'タワー' in text:
