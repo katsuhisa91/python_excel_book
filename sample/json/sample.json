@@ -1,1 +1,5 @@
-{"id": 1, "name": "Homework", "deadline": "2020/09/01"}
+{
+    "id": 1,
+    "name": "Homework",
+    "deadline": "2020/09/01"
+}

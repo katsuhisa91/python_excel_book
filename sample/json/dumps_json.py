@@ -7,4 +7,4 @@ task_data = {
 }
 
 with open('sample.json', 'x', newline='') as f:
-    f.write(json.dumps(task_data))
+    f.write(json.dumps(task_data, indent=4))
