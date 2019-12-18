@@ -2,8 +2,12 @@ import requests
 import time
 
 for page_num in range(4):
-    url = 'xxxxxx&page={}'.format(page_num)
-    r = requests.get(url)
+    url = 'xxxxx'
+    params = {
+        'g': 'プログラミング・システム開発',
+        'page': page_num
+    }
+    r = requests.get(url, params)
+    print(r.url)
     html = r.text
-    print(html)
     time.sleep(1)
