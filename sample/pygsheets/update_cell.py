@@ -1,7 +1,7 @@
 import pygsheets
 
-gc = pygsheets.authorize(service_file='pygsheets-ccc35124cb77.json')
-sp = gc.open_by_key('1iONW2lt23IM74J7A2RysUVes-06kGxJbgZlz7sTeZlY')
+gc = pygsheets.authorize(service_file='pygsheets-xxxxxxxxxxxx.json')
+sp = gc.open_by_key('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
 
 wks = sp.worksheet('index', 0)
 # wks.update_value((1, 3), '10000') でもOK
