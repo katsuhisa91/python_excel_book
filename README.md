@@ -1,2 +1,2 @@
-## Python, Excel Book
-
+## Pythonでオフィス業務を効率化する
+- sampleにサンプルコードが入っています
