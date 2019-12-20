@@ -7,6 +7,7 @@ driver = webdriver.Chrome('/Applications/chromedriver')
 driver.get('XXXXX')
 time.sleep(1)
 search_box = driver.find_element_by_name('q')
+# 任意の検索したいキーワードを指定
 search_box.send_keys('XXXXX')
 time.sleep(1)
 search_box.submit()
