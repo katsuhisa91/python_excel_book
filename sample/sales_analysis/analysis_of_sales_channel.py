@@ -30,10 +30,8 @@ def get_channel_data(path):
 sales = get_sales_data(folder_path)
 channel = get_channel_data(folder_path)
 
-# 取引先ごとに売上を集計
-sales_by_supplier = sales.groupby('取引先名').sum()
 # 流入元データと、売上サマリーデータを結合する
-sales_analysis = pd.merge(channel, sales_by_supplier, on='取引先名')
+sales_analysis = pd.merge(channel, sales, on='取引先名')
 # 流入元ごとの売上データを集計
 sales_by_channel = sales_analysis.groupby('流入元').sum()
 
@@ -42,6 +40,5 @@ print(sales_by_channel)
 
 # Excelに集計したデータを出力
 with pd.ExcelWriter('summary.xlsx') as writer:
-    sales.to_excel(writer, sheet_name='売上')
-    sales_by_supplier.to_excel(writer, sheet_name='取引先ごとの売上')
+    sales_analysis.to_excel(writer, sheet_name='売上サマリー')
     sales_by_channel.to_excel(writer, sheet_name='流入元ごとの売上')
