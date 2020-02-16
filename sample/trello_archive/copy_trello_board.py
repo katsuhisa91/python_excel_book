@@ -8,6 +8,7 @@ with open('trello_api_info.json', 'r', newline='') as f:
 
 sample_board_member_id = 'katsuhisa_'
 sample_board_name = 'sample_board'
+# それぞれ、皆さんのTrelloの情報に置き換えてください
 your_member_id = 'katsuhisa__'
 your_sample_board_name = 'sample_board'
 
