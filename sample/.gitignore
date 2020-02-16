@@ -1,3 +1,4 @@
 gspread/gspread-*.json
 pygsheets/pygsheets-*.json
 pygsheets/consts.txt
+trello_archive/*.json
