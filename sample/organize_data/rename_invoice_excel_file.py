@@ -39,18 +39,20 @@ def get_invoice_created_date(wb):
     return date
 
 
-def get_new_invoice_file_name(invoice_corporate_name, invoice_created_date):
+def get_new_invoice_file_name(wb):
+    invoice_corporate_name = get_invoice_corporate_name(wb)
+    invoice_created_date = get_invoice_created_date(wb)
     # 文字列 YYYY/MM を YYYY年MM月 に変換する
     formatted_date = '{0}年{1}月'.format(invoice_created_date[0:4], invoice_created_date[5:7])
     # ファイル名を生成 : 例「請求書_株式会社A様_2020年6月」
     file_name = '請求書_{0}様_{1}'.format(invoice_corporate_name, formatted_date)
-    return file_name
+    return file_name, invoice_corporate_name
 
 
 def make_new_invoice_dir(invoice_corporate_name):
-    folder_path = work_dir_path + '/' + invoice_corporate_name
-    os.makedirs(folder_path, exist_ok=True)
-    return folder_path
+    dir_path = work_dir_path + '/' + invoice_corporate_name
+    os.makedirs(dir_path, exist_ok=True)
+    return dir_path
 
 
 work_dir_path = path + '/after'
@@ -66,13 +68,12 @@ for file in files:
         if check_invoice_excel_file(wb):
             # 請求書ファイルを移動する
             try:
-                corporate_name = get_invoice_corporate_name(wb)
-                created_date = get_invoice_created_date(wb)
-                new_file_name = get_new_invoice_file_name(corporate_name, created_date)
+                new_file_name, new_dir_name = get_new_invoice_file_name(wb)
                 new_file_name_with_ext = new_file_name + '.xlsx'
-                new_folder_path = make_new_invoice_dir(corporate_name)
-                shutil.move(file, new_folder_path + '/' + new_file_name_with_ext)
             except AttributeError as e:
-                print('請求書の日付がフォーマットに従っていない可能性があります : ' + file)
+                print('請求書の日付がフォーマットに従っていない可能性があります:' + file)
             except Exception as e:
-                print('請求書がフォーマットに従っていない可能性があります : ' + file)
+                print('請求書がフォーマットに従っていない可能性があります:' + file)
+            else:
+                new_dir_path = make_new_invoice_dir(new_dir_name)
+                shutil.move(file, new_dir_path + '/' + new_file_name_with_ext)
