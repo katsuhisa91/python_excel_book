@@ -12,8 +12,10 @@ path = os.getcwd()
 work_dir_path = path + '/after'
 
 # 事前作業 : 作業用にbeforeフォルダからafterフォルダにすべてのファイルをコピー
-if 'after' not in os.listdir(path):
+try:
     shutil.copytree('./before', './after')
+except FileExistsError as e:
+    print('すでにafterフォルダが存在します')
 
 # afterフォルダのファイルをすべて取得
 files = glob.glob(work_dir_path + '/**', recursive=True)
