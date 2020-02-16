@@ -75,8 +75,6 @@ for file in files:
                 new_file_name, new_dir_name = get_new_invoice_file_name(wb)
             except AttributeError as e:
                 print('請求書の日付がフォーマットに従っていない可能性があります:' + file)
-            except Exception as e:
-                print('請求書がフォーマットに従っていない可能性があります:' + file)
             else:
                 new_dir_path = make_new_invoice_dir(new_dir_name)
                 shutil.move(file, new_dir_path + '/' + new_file_name)
