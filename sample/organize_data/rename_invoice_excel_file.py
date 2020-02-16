@@ -59,16 +59,20 @@ files = glob.glob(work_dir_path + '/**', recursive=True)
 
 # ファイル名変更処理を行う
 for file in files:
-    # ファイルのパスと拡張子を取得
-    path, ext = os.path.splitext(file)
-
-    # xls もしくは xlsx がファイル拡張子に含まれていればExcelファイルと判断する
-    if '.xls' in ext:
+    # xlsx がファイル拡張子に含まれていればExcelファイルと判断する
+    if '.xlsx' in file:
         wb = openpyxl.load_workbook(file)
+        # 請求書ファイルかどうかを確認する
         if check_invoice_excel_file(wb):
-            corporate_name = get_invoice_corporate_name(wb)
-            created_date = get_invoice_created_date(wb)
-            new_file_name = get_new_invoice_file_name(corporate_name, created_date)
-            new_file_name_with_ext = new_file_name + ext
-            new_folder_path = make_new_invoice_dir(corporate_name)
-            shutil.move(file, new_folder_path + '/' + new_file_name_with_ext)
+            # 請求書ファイルを移動する
+            try:
+                corporate_name = get_invoice_corporate_name(wb)
+                created_date = get_invoice_created_date(wb)
+                new_file_name = get_new_invoice_file_name(corporate_name, created_date)
+                new_file_name_with_ext = new_file_name + '.xlsx'
+                new_folder_path = make_new_invoice_dir(corporate_name)
+                shutil.move(file, new_folder_path + '/' + new_file_name_with_ext)
+            except AttributeError as e:
+                print('請求書の日付がフォーマットに従っていない可能性があります : ' + file)
+            except Exception as e:
+                print('請求書がフォーマットに従っていない可能性があります : ' + file)
