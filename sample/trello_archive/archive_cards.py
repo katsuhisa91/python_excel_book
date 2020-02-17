@@ -78,7 +78,7 @@ def copy_card_to_spreadsheet(card_name, worksheet, row_num):
     worksheet.update_value('A{}'.format(row_num), card_name)
 
 
-def archive_card(card_id, app_key='', app_token=''):
+def archive_card(card_id, app_key, app_token):
     url = "https://api.trello.com/1/cards/{}".format(card_id)
     params = {
         "key": app_key,
