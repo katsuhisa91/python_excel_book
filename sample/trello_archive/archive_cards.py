@@ -1,5 +1,5 @@
 import json
-from datetime import datetime, timedelta, timezone
+import datetime
 import requests
 import pygsheets
 
@@ -70,9 +70,8 @@ def get_board_cards(list_id, app_key='', app_token=''):
 
 
 def create_today_wks(spreadsheet):
-    JST = timezone(timedelta(hours=+9), 'JST')
-    today_date = datetime.now(JST).strftime("%Y-%m-%d")
-    return spreadsheet.add_worksheet(today_date)
+    today_date = datetime.date.today()
+    return spreadsheet.add_worksheet(str(today_date))
 
 
 def copy_card_to_spreadsheet(card_name, worksheet, row_num):
