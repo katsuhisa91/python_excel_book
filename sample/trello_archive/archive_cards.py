@@ -97,10 +97,10 @@ wks = create_today_wks(sp)
 # ボードのリストを取得
 your_board_id = get_board_id(your_member_id, your_sample_board_name, TRELLO_APP_KEY, TRELLO_APP_TOKEN)
 your_board_lists = get_board_lists(your_board_id, TRELLO_APP_KEY, TRELLO_APP_TOKEN)
-for board_list in your_board_lists:
+for your_board_list in your_board_lists:
     # 完了リストに対してのみ処理を行う
-    if '完了' == board_list['name']:
-        done_cards = get_board_cards(board_list['id'], TRELLO_APP_KEY, TRELLO_APP_TOKEN)
+    if '完了' == your_board_list['name']:
+        done_cards = get_board_cards(your_board_list['id'], TRELLO_APP_KEY, TRELLO_APP_TOKEN)
         for i, done_card in enumerate(done_cards):
             copy_card_to_spreadsheet(done_card['name'], wks, i + 1)
             archive_card(done_card['id'], TRELLO_APP_KEY, TRELLO_APP_TOKEN)
