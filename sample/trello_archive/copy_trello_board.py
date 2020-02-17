@@ -13,13 +13,13 @@ your_member_id = 'katsuhisa__'
 your_sample_board_name = 'sample_board'
 
 
-def get_board_id(member_id, board_name, app_key='', app_token=''):
+def get_board_id(owner_id, board_name, app_key='', app_token=''):
     params = {
         "key": app_key,
         "token": app_token,
         "fields": "name"
     }
-    url = 'https://trello.com/1/members/{}/boards'.format(member_id)
+    url = 'https://trello.com/1/members/{}/boards'.format(owner_id)
     response = requests.get(url, params)
     board_list = response.json()
     for board in board_list:
@@ -42,6 +42,9 @@ def get_board_lists(board_id, app_key='', app_token=''):
     for list_item in list_items:
         item['id'] = list_item['id']
         item['name'] = list_item['name']
+        # ミュータブルなオブジェクトをコピーする際は、copy()を使う
+        # 単に代入すると、ポインタが同じになるので、最終的にすべて同じ値が入る
+        # https://docs.python.org/ja/3.7/library/copy.html
         lists.append(item.copy())
     return lists
 
@@ -58,9 +61,11 @@ def update_board_list(board_id, list_name, app_key, app_token):
     return list_item['id']
 
 
-def get_board_cards(list_id):
+def get_board_cards(list_id, app_key='', app_token=''):
     url = "https://api.trello.com/1/lists/{}/cards".format(list_id)
     params = {
+        "key": app_key,
+        "token": app_token,
         "fields": "name"
     }
     response = requests.get(url, params)
@@ -68,12 +73,12 @@ def get_board_cards(list_id):
     return card_items
 
 
-def update_board_card(list_id, card, app_key, app_token):
+def update_board_card(list_id, card_item, app_key, app_token):
     url = "https://api.trello.com/1/lists/{}/cards".format(list_id)
     params = {
         "key": app_key,
         "token": app_token,
-        "name": card['name']
+        "name": card_item['name']
     }
     requests.post(url, params)
 
