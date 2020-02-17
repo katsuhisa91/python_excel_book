@@ -19,7 +19,7 @@ def get_board_id(owner_id, board_name, app_key='', app_token=''):
         "token": app_token,
         "fields": "name"
     }
-    url = 'https://trello.com/1/members/{}/boards'.format(owner_id)
+    url = 'https://api.trello.com/1/members/{}/boards'.format(owner_id)
     response = requests.get(url, params)
     board_list = response.json()
     for board in board_list:
@@ -31,7 +31,7 @@ def get_board_id(owner_id, board_name, app_key='', app_token=''):
 def get_board_lists(board_id, app_key='', app_token=''):
     lists = []
     item = {}
-    url = "https://trello.com/1/boards/{}/lists".format(board_id)
+    url = "https://api.trello.com/1/boards/{}/lists".format(board_id)
     params = {
         "key": app_key,
         "token": app_token,
