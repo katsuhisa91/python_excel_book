@@ -73,12 +73,12 @@ def get_board_cards(list_id, app_key='', app_token=''):
     return card_items
 
 
-def update_board_card(list_id, card_item, app_key, app_token):
+def update_board_card(list_id, card_name, app_key, app_token):
     url = "https://api.trello.com/1/lists/{}/cards".format(list_id)
     params = {
         "key": app_key,
         "token": app_token,
-        "name": card_item['name']
+        "name": card_name
     }
     requests.post(url, params)
 
@@ -101,4 +101,4 @@ for sample_board_list_item in sample_board_list:
     cards = get_board_cards(sample_board_list_item['id'])
     for card in cards:
         # サンプルボードのカード情報で、コピー先のボードを更新
-        update_board_card(new_list_id, card, TRELLO_APP_KEY, TRELLO_APP_TOKEN)
+        update_board_card(new_list_id, card['name'], TRELLO_APP_KEY, TRELLO_APP_TOKEN)
