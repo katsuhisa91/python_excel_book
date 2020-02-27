@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 
+# Excelファイルが置いてあるフォルダのパス
 # pathの中身は、皆さんの環境のパスに置き換えてください
 folder_path = '/Users/katsuhisakitano/PycharmProjects/sample/sales_analysis/excel/'
 
