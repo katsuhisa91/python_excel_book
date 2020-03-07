@@ -8,9 +8,6 @@ invoice_sheet_name = '請求書'
 invoice_created_date_cell = 'B5'
 corporate_name_cell = 'B2'
 
-path = os.getcwd()
-work_dir_path = path + '/after'
-
 # 事前作業 : 作業用にbeforeフォルダからafterフォルダにすべてのファイルをコピー
 try:
     shutil.copytree('./before', './after')
@@ -18,7 +15,7 @@ except FileExistsError as e:
     print('すでにafterフォルダが存在します')
 
 # afterフォルダのファイルをすべて取得
-files = glob.glob(work_dir_path + '/**', recursive=True)
+files = glob.glob('./after/**', recursive=True)
 
 
 def check_invoice_excel_file(wb):
@@ -57,7 +54,7 @@ def get_new_invoice_file_name(wb):
 
 
 def make_new_invoice_dir(invoice_corporate_name):
-    dir_path = work_dir_path + '/' + invoice_corporate_name
+    dir_path = './after/' + invoice_corporate_name
     os.makedirs(dir_path, exist_ok=True)
     return dir_path
 
