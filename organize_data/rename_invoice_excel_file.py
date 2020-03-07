@@ -8,14 +8,12 @@ invoice_sheet_name = '請求書'
 invoice_created_date_cell = 'B5'
 corporate_name_cell = 'B2'
 
-# 事前作業 : 作業用にbeforeフォルダからafterフォルダにすべてのファイルをコピー
-try:
-    shutil.copytree('./before', './after')
-except FileExistsError as e:
-    print('すでにafterフォルダが存在します')
 
-# afterフォルダのファイルをすべて取得
-files = glob.glob('./after/**', recursive=True)
+def check_excel_file(file):
+    if '.xlsx' in file:
+        return True
+    else:
+        return False
 
 
 def check_invoice_excel_file(wb):
@@ -31,10 +29,10 @@ def get_invoice_corporate_name(wb):
 
 
 def get_invoice_created_date(wb):
-    # 値「日付 2020/02」が取り出される
+    # 値「日付 YYYY/MM」が取り出される
     value = wb[invoice_sheet_name][invoice_created_date_cell].value
 
-    # 請求書の日付を取得する正規表現を準備
+    # 請求書の日付「YYYY/MM」を取得する正規表現を準備
     invoice_created_date_regex = re.compile(r'\d\d\d\d/\d\d')
     invoice_created_date_match = invoice_created_date_regex.search(value)
     # 文字列 YYYY/MM が取り出される
@@ -59,19 +57,28 @@ def make_new_invoice_dir(invoice_corporate_name):
     return dir_path
 
 
+def rename_and_move_invoice_file(file):
+    wb = openpyxl.load_workbook(file)
+    if check_invoice_excel_file(wb):
+        try:
+            # 請求書から、新しい請求書のファイル名を取得
+            # また、新しいフォルダ名（会社名）をあわせて取得
+            new_file_name, new_dir_name = get_new_invoice_file_name(wb)
+        except AttributeError as e:
+            print('請求書の日付がフォーマットに従っていない可能性があります:' + file)
+        else:
+            new_dir_path = make_new_invoice_dir(new_dir_name)
+            shutil.move(file, new_dir_path + '/' + new_file_name)
+
+
+# 事前作業 : 作業用にbeforeフォルダからafterフォルダにすべてのファイルをコピー
+try:
+    shutil.copytree('./before', './after')
+except FileExistsError as e:
+    print('すでにafterフォルダが存在します')
+# afterフォルダのファイルをすべて取得
+files = glob.glob('./after/**', recursive=True)
 # 請求書のファイル名変更処理を行う
 for file in files:
-    # xlsx がファイル拡張子に含まれていればExcelファイルと判断する
-    if '.xlsx' in file:
-        wb = openpyxl.load_workbook(file)
-        # 請求書ファイルかどうかを確認する
-        if check_invoice_excel_file(wb):
-            try:
-                # 請求書から、新しい請求書のファイル名を取得
-                # また、新しいフォルダ名（会社名）をあわせて取得
-                new_file_name, new_dir_name = get_new_invoice_file_name(wb)
-            except AttributeError as e:
-                print('請求書の日付がフォーマットに従っていない可能性があります:' + file)
-            else:
-                new_dir_path = make_new_invoice_dir(new_dir_name)
-                shutil.move(file, new_dir_path + '/' + new_file_name)
+    if check_excel_file(file):
+        rename_and_move_invoice_file(file)
