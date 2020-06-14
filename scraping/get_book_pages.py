@@ -1,5 +1,6 @@
-import requests
 import time
+
+import requests
 
 for page_num in range(4):
     url = 'xxxxx'

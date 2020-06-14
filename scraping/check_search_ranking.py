@@ -1,4 +1,5 @@
 import time
+
 from selenium import webdriver
 
 # headless環境で動かす際の設定
