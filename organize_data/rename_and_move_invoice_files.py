@@ -45,7 +45,7 @@ def get_new_invoice_file_name(wb):
     invoice_created_date = get_invoice_created_date(wb)
     # 文字列 YYYY/MM を YYYY年MM月 に変換する
     formatted_date = '{0}年{1}月'.format(invoice_created_date[0:4], invoice_created_date[5:7])
-    # ファイル名を生成 : 例「請求書_株式会社A様_2020年6月」
+    # ファイル名を生成 : 例「請求書_株式会社A様_2020年06月」
     file_name = '請求書_{0}様_{1}'.format(invoice_corporate_name, formatted_date)
     file_name_with_ext = file_name + '.xlsx'
     return file_name_with_ext, invoice_corporate_name
