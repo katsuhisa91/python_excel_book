@@ -1,9 +1,10 @@
-import requests
-from bs4 import BeautifulSoup
 import time
 
+import requests
+from bs4 import BeautifulSoup
+
 for page_num in range(4):
-    url = 'xxxxx'
+    url = 'https://gihyo.jp/book/genre'
     params = {
         'g': 'プログラミング・システム開発',
         'page': page_num
@@ -18,6 +19,6 @@ for page_num in range(4):
         if 'Python' in book_title:
             print(book_title)
             book_url = book_elem.get('href')
-            print('xxxxx' + book_url)
+            print('https://gihyo.jp/book/genre' + book_url)
 
     time.sleep(1)
