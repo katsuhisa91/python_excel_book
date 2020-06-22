@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-# Windows の場合
+# Windowsの場合
 folder_path = '.\\excel\\'
 # Macの場合
 # folder_path = './excel/'
