@@ -1,7 +1,10 @@
 import os
 import pandas as pd
 
-folder_path = './excel/'
+# Windows の場合
+folder_path = '.\\excel\\'
+# Macの場合
+# folder_path = './excel/'
 
 
 def get_sales_data(path):
