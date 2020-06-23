@@ -1,4 +1,5 @@
 import json
+
 import requests
 
 with open('trello_api_info.json', 'r', newline='') as f:
