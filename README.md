@@ -2,7 +2,7 @@
 本ページは [『Pythonでかなえる　Excel作業効率化』](https://gihyo.jp/book/2020/978-4-297-11450-3) のサポートページです。書籍内のプログラムや、読者特典について案内しています。
 
 ### プログラムについて
-#### 二章「Pythonを動かしてみよう」
+#### 第2章「Pythonを動かしてみよう」
 
 |  プログラム番号  |  プログラム名  |
 | ---- | ---- |
@@ -47,21 +47,67 @@
 
  ※1...書籍では、関数定義前後の空行（改行のみの行）は一行だけですが、二行空行をいれることが望ましいです。書籍内でも紹介しているPEP-8で、関数定義の前後は、2行ずつ空けることが望ましいと記載されているためです。動作上は空行が何行でも影響はありません。
 
-#### 三章
+#### 第3章「Excel作業を自動化しよう」
+
+|  プログラム番号  |  プログラム名  |
+| ---- | ---- |
+| 3-1 | [get_cell.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/get_cell.py) |
+| 3-2 | [get_column.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/get_column.py) |
+| 3-3 | [get_column2.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/get_column2.py) |
+| 3-4 | [create_excel_file.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/create_excel_file.py) |
+| 3-5 | [add_sheet.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/add_sheet.py) |
+| 3-6 | [remove_sheet.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/remove_sheet.py) |
+| 3-7 | [create_excel_file2.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/create_excel_file2.py) |
+| 3-8 | [set_formula.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/set_formula.py) |
+| 3-9 | [set_font.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/set_font.py) |
+| 3-10 | [set_layout.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/set_layout.py) |
+| 3-11 | [set_freeze_panes.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/set_freeze_panes.py) |
+| 3-12 | [add_chart.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/add_chart.py) |
+| 3-13 | [add_chart2.py](https://github.com/katsuhisa91/python_excel_book/blob/master/openpyxl/add_chart2.py) |
+
+#### 第4章　
+
+|  プログラム番号  |  プログラム名  |
+| ---- | ---- |
+| 4-1 | []() |
+| 4-2 | []() |
+| 4-3 | []() |
+| 4-4 | []() |
+| 4-5 | []() |
+| 4-6 | []() |
+| 4-7 | []() |
+| 4-8 | []() |
+| 4-9 | []() |
+| 4-10 | []() |
+| 4-11 | []() |
+| 4-12 | []() |
+| 4-13 | []() |
+| 4-14 | []() |
+| 4-15 | []() |
+| 4-16 | []() |
+| 4-17 | []() |
+| 4-18 | []() |
+| 4-19 | []() |
+| 4-20 | []() |
+| 4-21 | []() |
+| 4-22 | []() |
+| 4-23 | []() |
+| 4-24 | []() |
+| 4-25 | []() |
+| 4-26 | []() |
+| 4-27 | []() |
+| 4-28 | []() |
 
 
-#### 四章
+#### 第5章
 
 
-#### 五章
+#### 第6章
 
 
-#### 六章
+#### 第7章
 
 
-#### 七章
-
-
-### 読者特典 : 八章「」
+### 読者特典の紹介 : 第8章「」
 
 
