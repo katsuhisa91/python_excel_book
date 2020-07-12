@@ -125,6 +125,8 @@
 | 7-6 | 7-8 |
 | 7-7 | 7-8 |
 
-### 読者特典の紹介 : 第8章「」
+### 読者特典 : 第8章「Web APIで、SaaSのデータを取得・操作しよう」
+　近年は、社内で複数のSaaSを利用している方も多いでしょう。そこで、Web APIを利用して、SaaSから必要なデータを取り出したり、Python経由でSaaSのデータを操作したりする一連の流れを、読者特典としてご用意しました。
 
-
+ - [8-1 JSONデータの処理](https://github.com/katsuhisa91/python_excel_book/tree/master/json)
+ - [8-2 Web APIで、Trelloのデータを取得・操作する](https://github.com/katsuhisa91/python_excel_book/tree/master/trello_archive)
