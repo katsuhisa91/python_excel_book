@@ -1,7 +1,24 @@
 ## 『Pythonでかなえる　Excel作業効率化』サポートページ
 本ページは [『Pythonでかなえる　Excel作業効率化』](https://gihyo.jp/book/2020/978-4-297-11450-3) のサポートページです。書籍内のプログラムや、読者特典について案内しています。
 
-### プログラムについて
+![book_image](http://image.gihyo.co.jp/assets/images/cover/2020/9784297114503.jpg)
+
+https://gihyo.jp/book/2020/978-4-297-11450-3
+
+### 目次
+
+ - [お知らせ](#h1)
+ - [プログラムについて](#h2)
+ - [読者特典](#h3)
+
+### お知らせ<a name="h1"></a>
+| 更新日 | お知らせ番号 | お知らせ内容 | 書籍該当箇所 |
+| ---- | ---- | ---- | ---- |
+| 2020/07/12 | [001](https://github.com/katsuhisa91/python_excel_book/blob/master/information/001_update_github_ui.md) | GitHubのUI変更に伴い、コードをダウンロードするUIが書籍内の情報と異なります | はじめに「コードのダウンロード」(p7) |
+
+### プログラムについて<a name="h2"></a>
+　書籍内のプログラム
+
 #### 第2章「Pythonを動かしてみよう」
 
 |  プログラム番号  |  プログラム名  |
@@ -125,7 +142,7 @@
 | 7-6 | 7-8 |
 | 7-7 | 7-8 |
 
-### 読者特典 : 第8章「Web APIで、SaaSのデータを取得・操作しよう」
+### 読者特典 : 第8章「Web APIで、SaaSのデータを取得・操作しよう」<a name="h3"></a>
 　近年は、社内で複数のSaaSを利用している方も多いでしょう。そこで、Web APIを利用して、SaaSから必要なデータを取り出したり、Python経由でSaaSのデータを操作したりする一連の流れを、読者特典としてご用意しました。
 
  - [8-1 JSONデータの処理](https://github.com/katsuhisa91/python_excel_book/tree/master/json)
