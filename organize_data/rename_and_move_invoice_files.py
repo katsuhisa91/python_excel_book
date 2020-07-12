@@ -53,10 +53,7 @@ def get_new_invoice_file_name(wb):
 
 
 def make_new_invoice_dir(invoice_corporate_name):
-    # Windowsの場合
-    dir_path = '.\\after' + invoice_corporate_name
-    # Macの場合
-    # dir_path = './after' + invoice_corporate_name
+    dir_path = '.\\after\\' + invoice_corporate_name
     os.makedirs(dir_path, exist_ok=True)
     return dir_path
 
@@ -72,27 +69,16 @@ def rename_and_move_invoice_file(file):
             print('請求書の日付がフォーマットに従っていない可能性があります:' + file)
         else:
             new_dir_path = make_new_invoice_dir(new_dir_name)
-            # Windwosの場合
             shutil.move(file, new_dir_path + '\\' + new_file_name)
-            # Macの場合
-            # shutil.move(file, new_dir_path + '/' + new_file_name)
 
 
 # 事前作業 : 作業用にbeforeフォルダからafterフォルダにすべてのファイルをコピー
 try:
-    # Windowsの場合
     shutil.copytree('.\\before', '.\\after')
-    # Macの場合
-    # shutil.copytree('./before', './after')
 except FileExistsError as e:
     print('すでにafterフォルダが存在します')
-
 # afterフォルダのファイルをすべて取得
-# Windwosの場合
 files = glob.glob('.\\after\\**', recursive=True)
-# Macの場合
-# files = glob.glob('./after/**', recursive=True)
-
 # 請求書のファイル名変更処理を行う
 for file in files:
     if check_excel_file(file):
