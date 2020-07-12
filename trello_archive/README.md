@@ -4,7 +4,7 @@
 ### Trelloとは
 　Trelloはカンバン形式でタスク管理を行うことができるサービスです。カンバンは、タスクの流れを一枚のボードに表現することで、仕事の状態を見える化するために活用します。百聞は一見に如かず、ということで、今回の演習で使用するボードをご覧ください。
 
-![image1](https://user-images.githubusercontent.com/13625028/87246284-71f91600-c487-11ea-81c8-b2fc2ca31f2d.png)
+![image1](https://user-images.githubusercontent.com/13625028/87246283-6e658f00-c487-11ea-9b88-5ad5019e13d7.png)
 
 https://trello.com/b/NmafZJXw/sampleboard
 
