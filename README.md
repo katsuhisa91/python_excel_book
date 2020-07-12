@@ -99,11 +99,31 @@
 | 5-20 | [read_csv.py](https://github.com/katsuhisa91/python_excel_book/blob/master/csv/read_csv.py) |
 | 5-21 | [edit_csv.py](https://github.com/katsuhisa91/python_excel_book/blob/master/csv/edit_csv.py) |
 
-#### 第6章
+#### 第6章「表計算やデータ分析をやってみよう」
 
+|  プログラム番号  |  プログラム名  |
+| ---- | ---- |
+| - | [sample.ipynb](https://github.com/katsuhisa91/python_excel_book/blob/master/data_analysis/sample.ipynb) |
+| - | [sample2.ipynb](https://github.com/katsuhisa91/python_excel_book/blob/master/data_analysis/sample2.ipynb) |
+| - | [customer_analysis.ipynb](https://github.com/katsuhisa91/python_excel_book/blob/master/data_analysis/customer_analysis.ipynb) |
 
-#### 第7章
+#### 第7章「いろんな業務を自動化してみよう」
 
+|  プログラム番号  |  プログラム名  |
+| ---- | ---- |
+| 7-2 | [analysis_of_sales_channel.py](https://github.com/katsuhisa91/python_excel_book/blob/master/sales_analysis/analysis_of_sales_channel.py) |
+| 7-3 | [rename_and_move_invoice_files.py](https://github.com/katsuhisa91/python_excel_book/blob/master/organize_data/rename_and_move_invoice_files.py) |
+| 7-5 | [get_python_books.py](https://github.com/katsuhisa91/python_excel_book/blob/master/scraping/get_python_books.py) |
+| 7-8 | [get_book_image.py](https://github.com/katsuhisa91/python_excel_book/blob/master/scraping/get_book_image.py) |
+
+以下のプログラム番号のプログラムは、それぞれ途中経過のため記載していません。それぞれ、完成版プログラムをご参照ください。
+
+|  途中経過の<br>プログラム  |  完成版の<br>プログラム  |
+| ---- | ---- |
+| 7-1 | 7-2 |
+| 7-4 | 7-5 |
+| 7-6 | 7-8 |
+| 7-7 | 7-8 |
 
 ### 読者特典の紹介 : 第8章「」
 
