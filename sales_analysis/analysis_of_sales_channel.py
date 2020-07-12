@@ -2,10 +2,7 @@ import os
 
 import pandas as pd
 
-# Windowsの場合
 folder_path = '.\\excel\\'
-# Macの場合
-# folder_path = './excel/'
 
 
 def get_sales_data(path):
@@ -35,6 +32,7 @@ channel = get_channel_data(folder_path)
 
 # 流入元データと、売上サマリーデータを結合する
 sales_summary = pd.merge(channel, sales, on='取引先名')
+
 # 流入元ごとの売上データを集計
 sales_by_channel = sales_summary.groupby('流入元').sum()
 
