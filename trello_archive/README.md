@@ -4,7 +4,7 @@
 ### Trelloとは
 　Trelloはカンバン形式でタスク管理を行うことができるサービスです。カンバンは、タスクの流れを一枚のボードに表現することで、仕事の状態を見える化するために活用します。百聞は一見に如かず、ということで、今回の演習で使用するボードをご覧ください。
 
-[image1](https://user-images.githubusercontent.com/13625028/87246284-71f91600-c487-11ea-81c8-b2fc2ca31f2d.png)
+![image1](https://user-images.githubusercontent.com/13625028/87246284-71f91600-c487-11ea-81c8-b2fc2ca31f2d.png)
 
 https://trello.com/b/NmafZJXw/sampleboard
 
@@ -22,7 +22,7 @@ https://trello.com/ja/signup
 
 　ユーザー登録完了後、画面上部の「＋」ボタンをクリックし「ボードを作成」をクリック。
 
-[image2](https://user-images.githubusercontent.com/13625028/87246285-7291ac80-c487-11ea-9ecc-e20762d91a60.png)
+![image2](https://user-images.githubusercontent.com/13625028/87246285-7291ac80-c487-11ea-9ecc-e20762d91a60.png)
 
 　「ボードタイトルを追加」という箇所に、適当な名前を入れてください。本演習では、「sample_board」とします。公開方法は、非公開で構いません。これでボードの準備は完了です。ボードの中身は、プログラムをつかって後ほど作成するので、今はボードの中身が空っぽで問題ありません。
 
@@ -33,7 +33,7 @@ https://trello.com/app-key
 
 　開発者契約への同意確認のチェックボックスにチェックを入れ、「APIキーを表示」をクリックすると、画面にAPIキーが表示されるので、コピーしてどこかにメモしておきましょう。
 
-[image3](https://user-images.githubusercontent.com/13625028/87246288-745b7000-c487-11ea-8fde-64136e6ffeb3.png)
+![image3](https://user-images.githubusercontent.com/13625028/87246288-745b7000-c487-11ea-8fde-64136e6ffeb3.png)
 
 トークンの取得
 　次に、以下URLの「{APIキー}」を、先ほど取得したAPIキーに置き換え、アクセスしてください。{}は不要です。
@@ -45,7 +45,7 @@ https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/#auth
 
 　URLにアクセスし、画面を最下部までスクロールし「許可」をクリックします。
 
-[image4](https://user-images.githubusercontent.com/13625028/87246292-758c9d00-c487-11ea-82ce-80130b9476ed.png)
+![image4](https://user-images.githubusercontent.com/13625028/87246292-758c9d00-c487-11ea-82ce-80130b9476ed.png)
 
 　許可を行うと、画面が遷移しトークンが表示されます。こちらもコピーし、どこかに保存しておいてください。APIキーもトークンも、他人に公開しないでください。
 
@@ -71,7 +71,7 @@ https://developers.trello.com/reference/
 
 　ここでは、TrelloのボードIDを取得する方法を調べましょう。ボードのIDを取得するには、ボードを所有しているリソースが何か？をまず考えます。ボードはユーザーの所有物です。そこで、APIドキュメントページの左側のエリアをスクロールして探すと、ユーザーと直接的に表現はされていませんが、「Members」という項目があります。さらに「Members」の項目を詳しくみていくと、「/members/{id}/boards」という項目が見つかります。
 
-[image5](https://user-images.githubusercontent.com/13625028/87246287-73c2d980-c487-11ea-9221-1a73fc691bfa.png)
+![image5](https://user-images.githubusercontent.com/13625028/87246287-73c2d980-c487-11ea-9221-1a73fc691bfa.png)
 
 https://developers.trello.com/reference/#membersidboards
 
@@ -101,7 +101,7 @@ https://api.trello.com/1/lists/{リストのID}/cards
 
 Trelloのデータの関係性
 
-[image6](https://user-images.githubusercontent.com/13625028/87246290-74f40680-c487-11ea-892c-4f80e0789a59.png)
+![image6](https://user-images.githubusercontent.com/13625028/87246290-74f40680-c487-11ea-892c-4f80e0789a59.png)
 
 　APIドキュメントの読み方は、どんなWebサービスでも大きく変わりません。多くのWebサービスではRESTという共通の設計原則に従って実装されているので、同じインターフェースで扱うことができるからです。APIと聞くと難しく聞こえるかもしれませんが、慣れればAPIをたたくだけで皆さんのできることを格段に広げてくれる強力な武器となるでしょう。
 
@@ -114,11 +114,11 @@ Trelloのデータの関係性
 
 　コラム「APIドキュメントの読み方」にてご説明しましたが、ボードはメンバーの持ち物でした。そのため、ボードIDを取得するAPIを実行するために、メンバーを一意に特定するIDが必要です。メンバーIDは、ボード上に表示されたユーザーアイコンをクリックすることで、調べることができます。
 
-[image7](https://user-images.githubusercontent.com/13625028/87246284-71f91600-c487-11ea-81c8-b2fc2ca31f2d.png)
+![image7](https://user-images.githubusercontent.com/13625028/87246284-71f91600-c487-11ea-81c8-b2fc2ca31f2d.png)
 
 　@ではじまる英数字の羅列が、メンバーIDです。
 
-[image8](https://user-images.githubusercontent.com/13625028/87246286-732a4300-c487-11ea-9f16-2a483acb45d5.png)
+![image8](https://user-images.githubusercontent.com/13625028/87246286-732a4300-c487-11ea-9f16-2a483acb45d5.png)
 
 2.メンバーの持つボード一覧を取得する
 
@@ -419,7 +419,7 @@ for sample_board_list_item in sample_board_list:
 
 　プログラム実行後、皆さんのTrelloのボードを確認すると、次のようになります。sample_boardの内容がコピーされたことが分かりました。（なお、ボードの背景色は違っていても気にする必要はありません。）
 
-[image9](https://user-images.githubusercontent.com/13625028/87246291-758c9d00-c487-11ea-961d-4f0a593f5449.png)
+![image9](https://user-images.githubusercontent.com/13625028/87246291-758c9d00-c487-11ea-961d-4f0a593f5449.png)
 
 ### さらなる応用
 　プログラムを書くことに加え、APIドキュメントを調べながら作業することになるので、慣れない方にとっては難しく感じたかもしれません。しかし、APIドキュメントを読み、プログラムを書くことができれば、本書をここまで読み進めてきた皆さんには、まさに鬼に金棒です。多くのWebサービスは、APIを提供しているので、きっと皆さんの業務を自動化する役に立つでしょう。
