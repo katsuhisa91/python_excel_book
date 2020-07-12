@@ -1,11 +1,11 @@
 fruits = ['apple', 'orange', 'banana']
 
 if 'apple' in fruits:
-    print('appleあります！！！')
+    print('appleあります！')
 else:
-    print('appleありません！！！')
+    print('appleありません！')
 
 if 'grape' in fruits:
-    print('grapeあります！！！')
+    print('grapeあります！')
 else:
-    print('grapeありません！！！')
+    print('grapeありません！')
