@@ -130,3 +130,9 @@
 
  - [8-1 JSONデータの処理](https://github.com/katsuhisa91/python_excel_book/tree/master/json)
  - [8-2 Web APIで、Trelloのデータを取得・操作する](https://github.com/katsuhisa91/python_excel_book/tree/master/trello_archive)
+
+|  プログラム番号  |  プログラム名  |
+| ---- | ---- |
+| 8-1 | [dumps_json.py](https://github.com/katsuhisa91/python_excel_book/blob/master/json/dumps_json.py) |
+| 8-2 | [loads_json.py](https://github.com/katsuhisa91/python_excel_book/blob/master/json/loads_json.py) |
+| 8-3 | [copy_trello_board.py](https://github.com/katsuhisa91/python_excel_book/blob/master/trello_archive/copy_trello_board.py) |
