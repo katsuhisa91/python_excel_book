@@ -41,6 +41,7 @@ https://trello.com/app-key
 https://trello.com/1/authorize?expiration=never&name=MyPersonalToken&scope=read,write&response_type=token&key={APIキー}
 
 ※ このURLは、Trelloの開発者用ドキュメントから見つけることができます。
+
 https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/#authorizing-a-client
 
 　URLにアクセスし、画面を最下部までスクロールし「許可」をクリックします。
