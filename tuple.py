@@ -1,4 +1,4 @@
-sample_tuple = (10, 20)
+sample_tuple = (100, 200)
 x, y = sample_tuple
 print(x)
 print(y)
