@@ -35,7 +35,7 @@ https://trello.com/app-key
 
 ![image3](https://user-images.githubusercontent.com/13625028/87246288-745b7000-c487-11ea-8fde-64136e6ffeb3.png)
 
-トークンの取得
+#### トークンの取得
 　次に、以下URLの「{APIキー}」を、先ほど取得したAPIキーに置き換え、アクセスしてください。{}は不要です。
 
 https://trello.com/1/authorize?expiration=never&name=MyPersonalToken&scope=read,write&response_type=token&key={APIキー}
@@ -49,7 +49,7 @@ https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/#auth
 
 　許可を行うと、画面が遷移しトークンが表示されます。こちらもコピーし、どこかに保存しておいてください。APIキーもトークンも、他人に公開しないでください。
 
-APIキーの認証情報を別ファイルで管理する
+#### APIキーの認証情報を別ファイルで管理する
 　APIキーとトークンは、プログラムにベタ書きして利用することもできますが、できればプログラムに秘匿情報は入れたくありません。プログラムを共有する際に、誤って共有してしまう可能性があるためです。そこで、APIキーとトークンを別のJSONファイルで管理し、プログラムからは、8-1で学んだ方法を使って読み込むようにします。
 
 trello_api_info.json
@@ -308,7 +308,7 @@ for sample_board_list_item in sample_board_list:
 
 　これで、すべての実装が完了しました。完成したプログラムを一つにまとめると、次のようになります。
 
-copy_trello_board.py
+■プログラム 8-3 Trelloのカードをコピーする（copy_trello_board.py）
 ```python
 import json
 
