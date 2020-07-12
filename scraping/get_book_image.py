@@ -14,5 +14,5 @@ book_img_elem = book_img_elems[0]
 
 img = requests.get('xxxxx' + book_img_elem.attrs['data-src'])
 
-with open('./book.jpg', 'wb') as f:
+with open('.\\book.jpg', 'wb') as f:
     f.write(img.content)
