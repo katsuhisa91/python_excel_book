@@ -73,8 +73,31 @@
 | 4-2 | [get_cell.py](https://github.com/katsuhisa91/python_excel_book/blob/master/pygsheets/get_cell.py) |
 | 4-3 | [update_cell.py](https://github.com/katsuhisa91/python_excel_book/blob/master/pygsheets/update_cell.py) |
 
-#### 第5章
+#### 第5章「Excel作業の前工程・後工程を自動化しよう」
 
+|  プログラム番号  |  プログラム名  |
+| ---- | ---- |
+| 5-1 | [getcwd.py](https://github.com/katsuhisa91/python_excel_book/blob/master/os/getcwd.py) |
+| 5-2 | [list_current_dir.py](https://github.com/katsuhisa91/python_excel_book/blob/master/os/list_current_dir.py) |
+| 5-3 | [list_pycharm_dir.py](https://github.com/katsuhisa91/python_excel_book/blob/master/os/list_pycharm_dir.py) |
+| 5-4 | [ist_dir_recursive.py](https://github.com/katsuhisa91/python_excel_book/blob/master/os/list_dir_recursive.py) |
+| 5-5 | [make_dir.py](https://github.com/katsuhisa91/python_excel_book/blob/master/os/make_dir.py) |
+| 5-6 | [make_txt.py](https://github.com/katsuhisa91/python_excel_book/blob/master/os/make_txt.py) |
+| 5-7 | [read_txt.py](https://github.com/katsuhisa91/python_excel_book/blob/master/os/read_txt.py) |
+| 5-8 | [move_file.py](https://github.com/katsuhisa91/python_excel_book/blob/master/os/move_file.py) |
+| 5-9 | [copy_file.py](https://github.com/katsuhisa91/python_excel_book/blob/master/os/copy_file.py) |
+| 5-10 | [rename_file.py](https://github.com/katsuhisa91/python_excel_book/blob/master/os/rename_file.py) |
+| 5-11 | [find.py](https://github.com/katsuhisa91/python_excel_book/blob/master/text_search/find.py) |
+| 5-12 | [postal_code_findall.py](https://github.com/katsuhisa91/python_excel_book/blob/master/text_search/postal_code_findall.py) |
+| 5-13 | [postal_code_findall_2.py](https://github.com/katsuhisa91/python_excel_book/blob/master/text_search/postal_code_findall_2.py) |
+| 5-14 | [postal_code_search.py](https://github.com/katsuhisa91/python_excel_book/blob/master/text_search/postal_code_search.py) |
+| 5-15 | [sub.py](https://github.com/katsuhisa91/python_excel_book/blob/master/text_search/sub.py) |
+| 5-16 | [replace_txt.py](https://github.com/katsuhisa91/python_excel_book/blob/master/text_search/replace_txt.py) |
+| 5-17 | [format.py](https://github.com/katsuhisa91/python_excel_book/blob/master/text_search/format.py) |
+| 5-18 | [format2.py](https://github.com/katsuhisa91/python_excel_book/blob/master/text_search/format2.py) |
+| 5-19 | [make_csv.py](https://github.com/katsuhisa91/python_excel_book/blob/master/csv/make_csv.py) |
+| 5-20 | [read_csv.py](https://github.com/katsuhisa91/python_excel_book/blob/master/csv/read_csv.py) |
+| 5-21 | [edit_csv.py](https://github.com/katsuhisa91/python_excel_book/blob/master/csv/edit_csv.py) |
 
 #### 第6章
 
