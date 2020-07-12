@@ -1,3 +1,3 @@
-with open('./file.txt', newline='') as f:
+with open('.\\file.txt') as f:
     text = f.read()
     print(text)

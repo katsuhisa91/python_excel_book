@@ -1,3 +1,3 @@
 import shutil
 
-shutil.copy('tmp/file.txt', './')
+shutil.copy('tmp\\file.txt', '.\\')

@@ -1,6 +1,7 @@
 import os
 
-path = '../'
+path = '..\\'
+# Macの人はpath = '../'
 files = os.listdir(path)
 
 print(files)

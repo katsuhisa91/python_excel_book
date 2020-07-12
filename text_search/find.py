@@ -1,4 +1,4 @@
-with open('./file.txt', newline='') as f:
+with open('.\\file.txt', encoding = 'UTF-8') as f:
     text = f.read()
 
 if 'タワー' in text:
