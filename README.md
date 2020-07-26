@@ -36,6 +36,7 @@ https://note.com/katsuhisa_/circle
 | 更新日 | お知らせ番号 | お知らせ内容 | 書籍該当箇所 |
 | ---- | ---- | ---- | ---- |
 | 2020/07/12 | [001](https://github.com/katsuhisa91/python_excel_book/blob/master/information/001_update_github_ui.md) | GitHubのUI変更に伴い、コードをダウンロードするUIが書籍内の情報と異なります | はじめに「コードのダウンロード」(p7) |
+| 2020/07/12 | [002](https://github.com/katsuhisa91/python_excel_book/blob/master/information/002_typo.md) | 誤植のお知らせ | 読者特典（p238） |
 
 ---
 
