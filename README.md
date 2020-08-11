@@ -5,9 +5,21 @@
 
 https://gihyo.jp/book/2020/978-4-297-11450-3
 
+### 本サポートページの使い方に関するお知らせ
+ - 本書内容に関する修正のご指摘、改善のご要望があれば、新しく [Issue](https://github.com/katsuhisa91/python_excel_book/issues) をつくって報告いただけると嬉しいです。
+ 1. https://github.com/katsuhisa91/python_excel_book/issues URLをクリック
+ 2.  `New issue` をクリックすると、Issue作成画面に遷移します
+
+ - 技術的な質問やプログラミング学習の相談に関しては、後述する [note のサークル](https://note.com/katsuhisa_/circle) をご活用ください。
+ - すでに明らかになっている、本書の誤植や要修正箇所については、後述の [本書内容に関するお知らせ](#h1) をご覧ください。修正計画についても記載してあるので、ご自身がお持ちの書籍が対象かどうかも確認いただけます。
+
+### お知らせ
+ - [発売からわずか10日で、第二版の出版が決定しました](https://note.com/katsuhisa_/n/nfa23ec692579) 
+ - [Kindle版が発売されました](https://note.com/katsuhisa_/n/n4c5d0aa6c4be)
+
 ---
 
-＜本書や、プログラミング学習に関する質問・相談がある方へのお知らせ＞
+### 本書や、プログラミング学習に関する質問・相談がある方へのお知らせ
 
 自由に技術的な質問や相談を行っていただけるnoteのサークルをつくりました。
 
@@ -25,18 +37,20 @@ https://note.com/katsuhisa_/circle
 
 ### 目次
 
- - [お知らせ](#h1)
+ - [本書内容に関するお知らせ](#h1)
  - [プログラムについて](#h2)
  - [読者特典](#h3)
 
 ---
 
-### お知らせ<a name="h1"></a>
+### 本書内容に関するお知らせ<a name="h1"></a>
 
-| 更新日 | お知らせ番号 | お知らせ内容 | 書籍該当箇所 |
-| ---- | ---- | ---- | ---- |
-| 2020/07/12 | [001](https://github.com/katsuhisa91/python_excel_book/blob/master/information/001_update_github_ui.md) | GitHubのUI変更に伴い、コードをダウンロードするUIが書籍内の情報と異なります | はじめに「コードのダウンロード」(p7) |
-| 2020/07/12 | [002](https://github.com/katsuhisa91/python_excel_book/blob/master/information/002_typo.md) | 誤植のお知らせ | 読者特典（p238） |
+| 更新日 |お知らせ番号 | お知らせ内容 | 書籍該当箇所 | 修正計画 |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| 2020/07/12 | [001](https://github.com/katsuhisa91/python_excel_book/blob/master/information/001_update_github_ui.md) | GitHubのUI変更に伴い、コードをダウンロードするUIが書籍内の情報と異なります | はじめに「コードのダウンロード」(p7) | 第二版にて修正済 |
+| 2020/07/12 | [002](https://github.com/katsuhisa91/python_excel_book/blob/master/information/002_typo.md) | 誤植のお知らせ | 読者特典（p238） | 第二版にて修正済 |
+| 2020/08/12 | [003](https://github.com/katsuhisa91/python_excel_book/blob/master/information/003_fix_example.md) | 文中のプログラム例の誤り | 第4章「4-4: セルの値を編集する」（p134） | 修正計画中 |
+| 2020/08/12 | [004](https://github.com/katsuhisa91/python_excel_book/blob/master/information/004_updatable_anaconda_python_version.md) | Anaconda Python のバージョン 3.8 が選択できるようになりました | 第1章「1-2: Pythonのインストール」（p21） | - |
 
 ---
 
