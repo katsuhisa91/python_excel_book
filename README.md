@@ -46,7 +46,7 @@ https://note.com/katsuhisa_/circle
 ### 本書内容に関するお知らせ<a name="h1"></a>
 
 | 更新日 |お知らせ番号 | お知らせ内容 | 書籍該当箇所 | 修正計画 |
-| ---- | ---- | ---- | ---- | ---- | ---- |
+| ---- | ---- | ---- | ---- | ---- |
 | 2020/07/12 | [001](https://github.com/katsuhisa91/python_excel_book/blob/master/information/001_update_github_ui.md) | GitHubのUI変更に伴い、コードをダウンロードするUIが書籍内の情報と異なります | はじめに「コードのダウンロード」(p7) | 第二版にて修正済 |
 | 2020/07/12 | [002](https://github.com/katsuhisa91/python_excel_book/blob/master/information/002_typo.md) | 誤植のお知らせ | 読者特典（p238） | 第二版にて修正済 |
 | 2020/08/12 | [003](https://github.com/katsuhisa91/python_excel_book/blob/master/information/003_fix_example.md) | 文中のプログラム例の誤り | 第4章「4-4: セルの値を編集する」（p134） | 修正計画中 |
