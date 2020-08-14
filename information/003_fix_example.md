@@ -24,6 +24,6 @@ wks.update_value((1,3), 150)
 ### 修正計画
 （第三版の発売が決定したら、）第三版にて修正予定
 
-### 
+### 謝辞
 @kyama0321 さんに以下 Issue でご指摘いただきました、誠にありがとうございます。
 https://github.com/katsuhisa91/python_excel_book/issues/4
