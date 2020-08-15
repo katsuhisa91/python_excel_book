@@ -66,15 +66,15 @@ trello_api_info.json
 ### コラム：APIドキュメントの読み方
 　TrelloのAPIの実行方法を調べましょう。このような場合は「サービス名 API」とGoogleで検索し、公式情報をたどるのが最も早いです。今回の場合は、「Trello API」で検索すると、下記サイトがヒットします。
 
-https://developers.trello.com/reference/
+https://developer.atlassian.com/cloud/trello/rest/
 
 　英語のサイトが表示されますが、APIは、直感的に使える場合が多いため、安心してください。
 
 　ここでは、TrelloのボードIDを取得する方法を調べましょう。ボードのIDを取得するには、ボードを所有しているリソースが何か？をまず考えます。ボードはユーザーの所有物です。そこで、APIドキュメントページの左側のエリアをスクロールして探すと、ユーザーと直接的に表現はされていませんが、「Members」という項目があります。さらに「Members」の項目を詳しくみていくと、「/members/{id}/boards」という項目が見つかります。
 
-![image5](https://user-images.githubusercontent.com/13625028/87246287-73c2d980-c487-11ea-9221-1a73fc691bfa.png)
+![image5](https://user-images.githubusercontent.com/13625028/90302913-94e27400-dee4-11ea-96c5-c274c56816ee.png)
 
-https://developers.trello.com/reference/#membersidboards
+https://developer.atlassian.com/cloud/trello/rest/api-group-members/#api-members-id-boards-get
 
 　APIのエンドポイントを確認すると「https://api.trello.com/1/members/id/boards」となっていることが分かります。また、「GET」と書かれてあることから、HTTPリクエストのgetメソッドでAPIを実行できることも分かりました。
 
