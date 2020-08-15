@@ -70,21 +70,23 @@ https://developer.atlassian.com/cloud/trello/rest/
 
 　英語のサイトが表示されますが、APIは、直感的に使える場合が多いため、安心してください。
 
-　ここでは、TrelloのボードIDを取得する方法を調べましょう。ボードのIDを取得するには、ボードを所有しているリソースが何か？をまず考えます。ボードはユーザーの所有物です。そこで、APIドキュメントページの左側のエリアをスクロールして探すと、ユーザーと直接的に表現はされていませんが、「Members」という項目があります。さらに「Members」の項目を詳しくみていくと、「/members/{id}/boards」という項目が見つかります。
+　ここでは、TrelloのボードIDを取得する方法を調べましょう。ボードのIDを取得するには、ボードを所有しているリソースが何か？をまず考えます。ボードはユーザーの所有物です。そこで、APIドキュメントページの左側のエリアをスクロールして探すと、ユーザーと直接的に表現はされていませんが、「Members」という項目があります。さらに「Members」の項目を詳しくみていくと、「Get Boards that Member belongs to」という項目が見つかります。
 
 ![image5](https://user-images.githubusercontent.com/13625028/90302913-94e27400-dee4-11ea-96c5-c274c56816ee.png)
 
 https://developer.atlassian.com/cloud/trello/rest/api-group-members/#api-members-id-boards-get
 
-　APIのエンドポイントを確認すると「https://api.trello.com/1/members/id/boards」となっていることが分かります。また、「GET」と書かれてあることから、HTTPリクエストのgetメソッドでAPIを実行できることも分かりました。
+　APIのエンドポイントを確認すると「/1/members/{id}/boards」となっていることが分かります。また、「GET」と書かれてあることから、HTTPリクエストのgetメソッドでAPIを実行できることも分かりました。
 
-　同様の確認方法で、8-2で利用するAPIのエンドポイントを調べていくと、次のようになります。
+　これは、実際には次のようなAPIを実行します。「 https://api.trello.com は、どこから出てきたんだ？」といった疑問がわく方は、 (公式ドキュメント)[https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/#your-first-api-call] により詳しい説明がのっているので、ご参考になさってください。
 
  - ボードのIDを取得する
 
 メソッド：GET
 
 https://api.trello.com/1/members/{メンバーのid}/boards
+
+　同様の確認方法で、8-2で利用するAPIのエンドポイントを調べていくと、次のようになります。
 
  - ボードのリスト情報を取得する / 更新する
 
