@@ -48,10 +48,12 @@ https://note.com/katsuhisa_/circle
 | 更新日 |お知らせ番号 | お知らせ内容 | 書籍該当箇所 | 修正計画 |
 | ---- | ---- | ---- | ---- | ---- |
 | 2020/07/12 | [001](https://github.com/katsuhisa91/python_excel_book/blob/master/information/001_update_github_ui.md) | GitHubのUI変更に伴い、コードをダウンロードするUIが書籍内の情報と異なります | はじめに「コードのダウンロード」(p7) | 第二版にて修正済 |
-| 2020/07/12 | [002](https://github.com/katsuhisa91/python_excel_book/blob/master/information/002_typo.md) | 誤植のお知らせ | 読者特典（p238） | 第二版にて修正済 |
+| 2020/07/12 | [002](https://github.com/katsuhisa91/python_excel_book/blob/master/information/002_typo.md) | 誤植のお知らせ | 読者特典の案内（p238） | 第二版にて修正済 |
 | 2020/08/12 | [003](https://github.com/katsuhisa91/python_excel_book/blob/master/information/003_fix_example.md) | 文中のプログラム例の誤り | 第4章「4-4: セルの値を編集する」（p134） | 修正計画中 |
 | 2020/08/12 | [004](https://github.com/katsuhisa91/python_excel_book/blob/master/information/004_updatable_anaconda_python_version.md) | Anaconda Python のバージョン 3.8 が選択できるようになりました | 第1章「1-2: Pythonのインストール」（p21） | - |
 | 2020/08/14 | [005](https://github.com/katsuhisa91/python_excel_book/blob/master/information/005_fix_example_program.md) | `get_python_books.py` 24行目のsleep()関数の閉じカッコが抜けている | 第7章「7-3-5: 書籍のURLを取り出す」（p227） | 修正計画中 |
+| 2020/08/15 | [006](https://github.com/katsuhisa91/python_excel_book/blob/master/information/006_fix_old_urls_and_screenshots.md) | TrelloのAPIドキュメントページの刷新に伴い、URLとスクリーンショットの内容が古くなった（動作への影響なし） | [読者特典「8-2 Web APIで、Trelloのデータを取得・操作する」](https://github.com/katsuhisa91/python_excel_book/blob/master/trello_archive/README.md#%E3%82%B3%E3%83%A9%E3%83%A0api%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AE%E8%AA%AD%E3%81%BF%E6%96%B9) | 修正計画中 |
+
 
 ---
 
