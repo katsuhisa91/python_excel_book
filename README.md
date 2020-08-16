@@ -1,5 +1,5 @@
-## 『Pythonでかなえる　Excel作業効率化』サポートページ
-本ページは [『Pythonでかなえる　Excel作業効率化』](https://gihyo.jp/book/2020/978-4-297-11450-3) のサポートページです。書籍内のプログラムや、読者特典について案内しています。
+## 『Pythonでかなえる Excel作業効率化』サポートページ
+本ページは [『Pythonでかなえる Excel作業効率化』](https://gihyo.jp/book/2020/978-4-297-11450-3) のサポートページです。書籍内のプログラムや、読者特典について案内しています。
 
 ![book_image](http://image.gihyo.co.jp/assets/images/cover/2020/9784297114503.jpg)
 
