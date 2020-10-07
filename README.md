@@ -53,7 +53,7 @@ https://note.com/katsuhisa_/circle
 | 2020/08/12 | [004](https://github.com/katsuhisa91/python_excel_book/blob/master/information/004_updatable_anaconda_python_version.md) | Anaconda Python のバージョン 3.8 が選択できるようになりました | 第1章「1-2: Pythonのインストール」（p21） | - |
 | 2020/08/14 | [005](https://github.com/katsuhisa91/python_excel_book/blob/master/information/005_fix_example_program.md) | `get_python_books.py` 24行目のsleep()関数の閉じカッコが抜けている | 第7章「7-3-5: 書籍のURLを取り出す」（p227） | 修正計画中 |
 | 2020/08/15 | [006](https://github.com/katsuhisa91/python_excel_book/blob/master/information/006_fix_old_urls_and_screenshots.md) | TrelloのAPIドキュメントページの刷新に伴い、URLとスクリーンショットの内容が古くなった（動作への影響なし） | [読者特典「8-2 Web APIで、Trelloのデータを取得・操作する」](https://github.com/katsuhisa91/python_excel_book/blob/master/trello_archive/README.md#%E3%82%B3%E3%83%A9%E3%83%A0api%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AE%E8%AA%AD%E3%81%BF%E6%96%B9) | 修正済 |
-| 2020/10/07 | [007](https://github.com/katsuhisa91/python_excel_book/blob/master/information/007_about_figure_7_12.md) | 7-2に登場する図の内容が、本文と合っていない（図が誤り） | 第7章「7-2: 特定のルールに従って、フォルダ構成を整理する」の図 7-12（p208） | 修正計画中 |
+| 2020/10/07 | [007](https://github.com/katsuhisa91/python_excel_book/blob/master/information/007_about_figure_7_12.md) | 図 7-12の内容が、本文の解説および、プログラムの内容と合っていない（図が誤り） | 第7章「7-2: 特定のルールに従って、フォルダ構成を整理する」の図 7-12（p208） | 修正計画中 |
 
 ---
 
